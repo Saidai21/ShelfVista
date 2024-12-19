@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center mb-4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJPOWXfm-cCwvFUtEd72T687dLQsn4Npv-A&s" class="img-fluid" alt="Banner de ShellVista" style="width: 100%; height: 100px; object-fit: cover;">
+</div>
+
+<div class="container mt-5">
+    <h1 class="text-center">Bienvenido a ShellVista</h1>
+    <p class="text-center">Tu sistema para la gestión de ventas en gondolas. Aquí podrás analizar las ventas, visualizar datos y mantener el inventario de productos.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-4 text-center">
+            <div class="card hover-card">
+                
+                <a href="{% url 'analisis' %}">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHSDWIJZxm05bU2RJoRK4aMl9AZ-Ou3vo8Lw&s" class="card-img-top" alt="Análisis de Productos" style="height: 200px; object-fit: cover;">
+                </a>''
+                <div class="card-body">
+                    <h4 class="card-title">Análisis de Productos</h4>
+                    <p class="card-text">Consulta el rendimiento de los productos y sus ganancias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card hover-card">
+                <a href=" {% url 'ventas' %}">
+                    <img src="https://econsultoria.net/wp-content/uploads/2021/08/vender_productos_amazon.png" class="card-img-top" alt="Mostrar Ventas" style="height: 200px; object-fit: cover;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Mostrar Ventas</h4>
+                    <p class="card-text">Visualiza las ventas agrupadas por producto y local.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card hover-card">
+                <a href="{% url 'mantenedor_gondolas' %}">
+                    <img src="https://img.freepik.com/vector-premium/estantes-supermercado-comestibles_169241-1205.jpg?semt=ais_hybrid" class="card-img-top" alt="Mantenedor de Gondolas" style="height: 200px; object-fit: cover;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Mantenedor de Gondolas</h4>
+                    <p class="card-text">Gestiona los productos en las gondolas y su inventario.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
